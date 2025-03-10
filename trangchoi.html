@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image/icon.png" />
+    <link rel="stylesheet" href="trangchoi.css" />
+    <title>Bầu cua</title>
+  </head>
+  <body>
+    <div class="container">
+      <img id="mute" src="./image/mute.png" onclick="tatNhac()" />
+      <div class="main">
+        <img class="circle" id="bowl" src="./image/bowl.png" />
+        <div>
+          <img class="dice circle" id="dice1" src="./image/bau.png" />
+          <img class="dice circle" id="dice2" src="./image/cua.png" />
+          <img class="dice circle" id="dice3" src="./image/tom.png" />
+        </div>
+        <img class="circle" id="plate" src="./image/plate.png" />
+      </div>
+      <div class="control">
+        <button class="btn btn_open" onclick="moBat()">Mở nắp</button>
+        <button class="btn btn_shake" onclick="xocBat()">Xóc</button>
+      </div>
+    </div>
+    <audio id="musicBg" src="./music/bg.mp3"></audio>
+    <audio id="musicShake" src="./music/shake.mp3"></audio>
+
+    <div class="betting-board">
+      <h2>Đặt cược</h2>
+      <p>Số tiền của bạn: <span id="player-money"></span> $</p>
+      <div class="bet-options">
+        <div class="bet-option" id="bet-bau">
+          <img src="./image/bau.png" alt="Bầu" />
+          <input type="number" id="bet-amount-bau" placeholder="Nhập số tiền" />
+        </div>
+        <div class="bet-option" id="bet-cua">
+          <img src="./image/cua.png" alt="Cua" />
+          <input type="number" id="bet-amount-cua" placeholder="Nhập số tiền" />
+        </div>
+        <div class="bet-option" id="bet-tom">
+          <img src="./image/tom.png" alt="Tôm" />
+          <input type="number" id="bet-amount-tom" placeholder="Nhập số tiền" />
+        </div>
+        <div class="bet-option" id="bet-ca">
+          <img src="./image/ca.png" alt="Cá" />
+          <input type="number" id="bet-amount-ca" placeholder="Nhập số tiền" />
+        </div>
+        <div class="bet-option" id="bet-ga">
+          <img src="./image/ga.png" alt="Gà" />
+          <input type="number" id="bet-amount-ga" placeholder="Nhập số tiền" />
+        </div>
+        <div class="bet-option" id="bet-huou">
+          <img src="./image/huou.png" alt="Hươu" />
+          <input
+            type="number"
+            id="bet-amount-huou"
+            placeholder="Nhập số tiền"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

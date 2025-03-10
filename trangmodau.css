@@ -1,0 +1,55 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cấu hình chung */
+body {
+  font-family: "Arial", sans-serif;
+  background: url("./image/nen.png") no-repeat center center/cover;
+  text-align: center;
+  color: white;
+  padding: 50px;
+}
+
+/* Container chính */
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Tiêu đề chính */
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffd700; /* Vàng sáng */
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+}
+
+/* Nút */
+.btn {
+  display: block;
+  width: 250px;
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, #e74c3c, #c0392b); /* Đỏ gradient */
+  border-radius: 10px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #c0392b, #a93226);
+  transform: scale(1.1);
+}
