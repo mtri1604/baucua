@@ -1,77 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Luật chơi Bầu Cua, trò chơi cá cược truyền thống tại Việt Nam" />
     <title>Luật Chơi Bầu Cua</title>
     <style>
       body {
-        font-family: sans-serif;
-        line-height: 1.6;
-        margin: 20px auto;
-        max-width: 800px;
         background: url("./image/nen.png") no-repeat center center/cover;
-        color: #0ee3fb; /* Màu chữ trắng để nổi bật trên nền đỏ */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Hiệu ứng viền chữ */
-        padding: 20px;
+        font-family: 'Arial', sans-serif;
+        line-height: 1.8;
+        margin: 0;
+        padding: 0;
+        background-color: #64150d94; /* Nền màu đỏ */
+        color: #ffffff; /* Màu chữ sáng */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
       }
-      .nen {
-        border: 2px solid #ddd; /* Đường viền xung quanh */
-        background-color: black;
+      .content {
+        max-width: 900px;
+        margin: 20px auto;
+        background-color: #46140fcc; /* Nền đen nhạt để làm nổi bật nội dung */
+        padding: 20px;
+        border-radius: 10px;
+      }
+      h1 {
+        font-size: 40px;
+        color: #ffd700; /* Màu vàng nổi bật */
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: 28px;
+        color: #ffd700; /* Màu vàng cho tiêu đề phụ */
+        text-align: center;
+        margin-top: 20px;
+      }
+      p, ul, ol {
+        font-size: 18px;
+        margin-bottom: 15px;
       }
       .quaylai {
         position: absolute;
         top: 10px;
-        right: 10px;
-        width: 150px;
-        padding: 12px;
+        left: 10px;
+        padding: 12px 20px;
         font-size: 18px;
         font-weight: bold;
-        text-align: center;
-        text-decoration: none;
         color: white;
-        background: linear-gradient(135deg, #e74c3c, #c0392b);
-        border-radius: 10px;
-        transition: transform 0.2s, background 0.3s;
+        background: #c0392b; /* Nút quay lại màu đỏ đậm */
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.3s;
       }
 
       .quaylai:hover {
-        background: linear-gradient(135deg, #c0392b, #a93226);
-        transform: scale(1.05);
-      }
-
-      h1 {
-        font-size: 50px;
-        color: #ffd700; /* Màu vàng nổi bật */
-        text-align: center;
-      }
-
-      h2 {
-        text-align: center;
-        font-size: 30px;
-        color: #ffd700;
+        background: #a93226; /* Màu tối hơn khi hover */
       }
 
       table {
-        width: 80%;
-        margin: 20px auto;
+        width: 100%;
+        margin: 20px 0;
         border-collapse: collapse;
       }
 
-      th,
-      td {
-        border: 1px solid #ddd;
-        padding: 10px;
+      th, td {
+        padding: 15px;
         text-align: center;
-        background: rgba(
-          255,
-          255,
-          255,
-          0.2
-        ); /* Nền trong suốt giúp chữ dễ đọc */
+        background-color: rgba(255, 255, 255, 0.1); /* Nền trong suốt để dễ đọc */
+        border: 1px solid #ddd;
+        font-size: 25px;
+        color: #ffffff; /* Màu chữ sáng */
       }
 
       th {
-        background-color: #f2f2f2;
-        font-weight: bold;
+        background-color: rgba(255, 215, 0, 0.3); /* Màu vàng nhẹ cho tiêu đề bảng */
       }
 
       li {
@@ -82,13 +84,13 @@
         background-color: rgba(255, 230, 230, 0.9);
         border: 1px solid #ffcccc;
         padding: 15px;
-        margin: 20px auto;
-        width: 80%;
-        color: black;
+        margin-top: 20px;
+        color: #333;
+        border-radius: 8px;
       }
 
       .warning h2 {
-        color: #b62d29;
+        color: #b62d29; /* Màu đỏ đậm cho phần cảnh báo */
       }
 
       .important {
@@ -99,10 +101,61 @@
       .italic {
         font-style: italic;
       }
+
+      /* Media Queries for responsiveness */
+      @media (max-width: 768px) {
+        body {
+          font-size: 16px;
+        }
+
+        h1 {
+          font-size: 30px;
+        }
+
+        h2 {
+          font-size: 24px;
+        }
+
+        .quaylai {
+          font-size: 16px;
+          padding: 10px 15px;
+        }
+
+        table {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          font-size: 14px;
+        }
+
+        h1 {
+          font-size: 26px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        .quaylai {
+          font-size: 14px;
+          padding: 8px 12px;
+        }
+
+        table {
+          font-size: 14px;
+        }
+
+        .content {
+          padding: 15px;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="nen">
+    <div class="content">
       <h1>Luật Chơi Bầu Cua</h1>
       <a href="trangmodau.html" class="quaylai">Quay Lại</a>
       <p>
@@ -117,7 +170,7 @@
         <li>
           Người chơi đặt cược tiền vào một hoặc nhiều con vật trên bàn cược.
         </li>
-        <li>Nhà cái ( máy ) lắc ba viên xúc xắc.</li>
+        <li>Nhà cái (máy) lắc ba viên xúc xắc.</li>
         <li>Sau khi xúc xắc dừng lại, nhà cái mở bát và công bố kết quả.</li>
         <li>
           Nếu con vật người chơi đặt cược xuất hiện trên xúc xắc, người chơi
